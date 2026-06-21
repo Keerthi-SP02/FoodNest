@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import registerImg from "../assets/Register.png";
 import axios from "axios";
 
 function Register() {
@@ -68,9 +69,7 @@ function Register() {
         <div className="row g-0 flex-lg-row-reverse">
           
           <div className="col-lg-6 d-none d-lg-flex align-items-center justify-content-center bg-light">
-            <img
-              src="src/assets/Register.png"
-              alt="Register"
+            <img src={registerImg} alt="Register"
               className="img-fluid p-4"
               style={{ maxHeight: "450px" }}
             />

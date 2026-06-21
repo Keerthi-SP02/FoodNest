@@ -14,16 +14,28 @@ const [sortOrder, setSortOrder] = useState("asc");
     expiryDate: "",
   });
 
-  const API_URL = import.meta.env.VITE_API_URL;
+  const API_URL = `${import.meta.env.VITE_API_URL}/api/items`;
 
-  const fetchFoods = async () => {
-    try {
-      const res = await axios.get(API_URL);
+const fetchFoods = async () => {
+  try {
+    const res = await axios.get(API_URL);
+
+    console.log("API Response:", res.data);
+
+    if (Array.isArray(res.data)) {
       setFoods(res.data);
-    } catch (error) {
-      console.log(error);
+    } else if (Array.isArray(res.data.foods)) {
+      setFoods(res.data.foods);
+    } else if (Array.isArray(res.data.data)) {
+      setFoods(res.data.data);
+    } else {
+      setFoods([]);
     }
-  };
+  } catch (error) {
+    console.log(error);
+    setFoods([]);
+  }
+};
 
   useEffect(() => {
     fetchFoods();
@@ -90,21 +102,23 @@ const [sortOrder, setSortOrder] = useState("asc");
     return "In Stock";
   };
 
-  const totalFoods = foods.length;
+const foodList = Array.isArray(foods) ? foods : [];
 
-  const inStock = foods.filter(
-    (food) => food.quantity > 10
-  ).length;
+const totalFoods = foodList.length;
 
-  const lowStock = foods.filter(
-    (food) =>
-      food.quantity > 0 &&
-      food.quantity <= 10
-  ).length;
+const inStock = foodList.filter(
+  (food) => food.quantity > 10
+).length;
 
-  const outOfStock = foods.filter(
-    (food) => food.quantity === 0
-  ).length;
+const lowStock = foodList.filter(
+  (food) =>
+    food.quantity > 0 &&
+    food.quantity <= 10
+).length;
+
+const outOfStock = foodList.filter(
+  (food) => food.quantity === 0
+).length;
 
   
   const getExpiryStatus = (expiryDate) => {
@@ -122,7 +136,7 @@ const [sortOrder, setSortOrder] = useState("asc");
   if (diffDays <= 7) return "Expiring Soon";
   return "Fresh";
 };
-const filteredFoods = foods
+const filteredFoods = foodList
   .filter(
     (food) =>
       food.name

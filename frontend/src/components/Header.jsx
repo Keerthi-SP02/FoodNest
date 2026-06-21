@@ -1,11 +1,12 @@
 import {Link} from "react-router-dom";
+import logo from "../assets/logo.png";
 function Header(){
         const user = JSON.parse(localStorage.getItem("user"));
     return(
             <div className="row" style={{background: "linear-gradient(to right, #eaf0ea, #c3e3cd)"}}>
                 <div className="col-md-6">
                     <div className="d-flex align-items-center">
-                        <img src="src/assets/logo.png" alt="FoodNest Logo" className="img-fluid"
+                        <img src={logo} alt="FoodNest Logo" className="img-fluid"
                             style={{
                                     width: "100px",
                                     height: "100px",

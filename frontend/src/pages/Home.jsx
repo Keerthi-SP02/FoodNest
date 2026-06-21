@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import {Link} from "react-router-dom";
+import homebg from "../assets/homebg.png";
 
 function Home() {
   const [foods, setFoods] = useState([]);
@@ -12,9 +13,8 @@ const API_URL = import.meta.env.VITE_API_URL;
   const fetchFoods = async () => {
     try {
       const res = await axios.get(
-    `${API_URL}/api/profile`
-        
-      );
+  `${API_URL}/api/items`
+);
       setFoods(res.data);
     } catch (error) {
       console.log(error);
@@ -77,7 +77,7 @@ const API_URL = import.meta.env.VITE_API_URL;
               maxHeight: "45vh",
               objectFit: "contain",
             }}
-            src="src/assets/homebg.png"
+           src={homebg}
             alt="FoodNest"
           />
         </div>

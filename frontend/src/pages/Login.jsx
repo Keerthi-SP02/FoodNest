@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import loginImg from "../assets/login.png";
 import axios from "axios";
 
 function Login() {
@@ -51,9 +52,7 @@ function Login() {
           
      
           <div className="col-lg-6 d-none d-lg-flex align-items-center justify-content-center bg-light">
-            <img
-              src="src/assets/Login.png"
-              alt="Login"
+            <img src={loginImg} alt="Login"
               className="img-fluid p-4"
               style={{ maxHeight: "650px" }}
             />

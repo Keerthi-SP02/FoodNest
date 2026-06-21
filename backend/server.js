@@ -224,34 +224,7 @@ app.get("/api/profile", authMiddleware, async (req, res) => {
   }
 });
 
-app.put("/api/change-password", async (req, res) => {
-  try {
-    const { email, password } = req.body;
 
-    const user = await User.findOne({ email });
-
-    if (!user) {
-      return res.status(404).json({
-        message: "User not found",
-      });
-    }
-
-    const hashedPassword = await bcrypt.hash(password, 10);
-
-    user.password = hashedPassword;
-
-    await user.save();
-
-    res.status(200).json({
-      message: "Password Changed Successfully",
-    });
-  } catch (error) {
-    res.status(500).json({
-      message: "Failed to Change Password",
-      error: error.message,
-    });
-  }
-});
 app.put("/api/update-profile", authMiddleware, async (req, res) => {
   try {
     const { fullname } = req.body;
@@ -281,5 +254,5 @@ app.put("/api/update-profile", authMiddleware, async (req, res) => {
 });
 
 app.listen(process.env.PORT,()=>{
-    console.log(`server running on port {PORT}`);
+      console.log(`Server running on port ${process.env.PORT}`);
 })

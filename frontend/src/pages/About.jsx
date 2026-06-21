@@ -1,10 +1,11 @@
+import aboutImg from "../assets/about.png";
 function About() {
   return (
     <div className="container-fluid py-2 px-3">
       <div className="row align-items-center g-3 mb-2">
         <div className="col-lg-5 col-md-6 text-center">
           <img
-            src="src/assets/about.png"
+          src={aboutImg}
             alt="Food Management"
             className="img-fluid rounded shadow"
             style={{
