@@ -1,20 +1,27 @@
-# dependencies
-node_modules
+# Dependencies
+node_modules/
+**/node_modules/
 
-# production build
-dist
+# Production build
+dist/
+build/
 
-# environment variables
+# Environment variables
 .env
 .env.local
+.env.*
 
-# logs
+frontend/.env
+backend/.env
+
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# editor
+# Editor
 .vscode/
 
 # OS files
 .DS_Store
+Thumbs.db
