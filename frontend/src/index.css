@@ -1,0 +1,16 @@
+html,
+body,
+#root {
+  width: 100%;
+  overflow-x: hidden;
+  height:100%;
+}
+@media (max-width: 768px) {
+  .table {
+    font-size: 14px;
+  }
+
+  .btn-sm {
+    width: 100%;
+  }
+}

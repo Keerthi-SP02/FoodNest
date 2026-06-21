@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f6f9;
+}
+
+.about {
+  padding: 18px;
+  height: 100vh;
+  overflow: hidden;
+  color: #1f2937;
+}
+
+
+.header {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.header h1 {
+  font-size: 26px;
+  color:#16a34a;
+}
+
+.about-foodboard {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 15px;
+}
+
+.about-image img {
+  width: 260px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about-content h2 {
+  color:#16a34a;
+  margin-bottom: 6px;
+}
+
+.about-content p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.feature-card {
+  background: white;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.feature-card h3 {
+  color:#16a34a;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.feature-card p {
+  font-size: 13px;
+}
+.mission {
+  text-align: center;
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.mission h2 {
+  color:#16a34a;
+  margin-bottom: 5px;
+}
+
+.mission p {
+  font-size: 13px;
+  line-height: 1.4;
+}
+

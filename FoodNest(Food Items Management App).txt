@@ -1,0 +1,140 @@
+FoodNest(Food Items Management App)
+Landing Page
+     |
+Register/Login
+       |
+   Home                                                              
+                                                                                            
+┌─────────────────────────────────────────────┐
+│ Header (Logo + Navigation)                  │
+└─────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────┐
+│ Hero Section                                │
+│                                              
+│ Manage Food Smarter            [Image]      │
+│                                              
+│ Track inventory, monitor expiry dates,      │
+│ and reduce food waste with FoodBoard.       │
+│                                              
+│ [ Explore Dashboard ]                       │
+└─────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────┐
+│ Dashboard Overview                          │
+└─────────────────────────────────────────────┘
+
+┌──────────┬──────────┬──────────┬──────────┐
+│ 📦 Total │ ✅ Fresh │ ⚠ Expiry │ ❌ Expired│
+│ Items    │ Items    │ Soon     │ Items    │
+│   120    │   95     │    15    │     10   │
+└──────────┴──────────┴──────────┴──────────┘
+
+┌─────────────────────────────────────────────┐
+│ Recently Added Food Items                   │
+└─────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────┐
+│ Name   Category  Qty  Added Date  Expiry    │
+│ Milk   Dairy      2   16-Jun      18-Jun    │
+│ Apple  Fruit     15   15-Jun      25-Jun    │
+│ Bread  Bakery     5   16-Jun      17-Jun    │
+└─────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────┐
+│ Footer                                      │
+└─────────────────────────────────────────────┘
+
+
+
+About
+Header
+
+About FoodBoard
+(Image Left | Content Right)
+
+------------------------------------------------
+
+FoodBoard is a Food Items Management System
+designed to help users manage food inventory,
+track expiry dates, and reduce food wastage.
+
+------------------------------------------------
+
+┌─────────────────────────────────┐
+│ 📦 Inventory Management         │
+│ Add, update, organize and       │
+│ maintain food records easily.   │
+└─────────────────────────────────┘
+
+┌─────────────────────────────────┐
+│ ⏰ Expiry Monitoring            │
+│ Track products nearing expiry   │
+│ and reduce unnecessary waste.   │
+└─────────────────────────────────┘
+
+┌─────────────────────────────────┐
+│ 📊 Dashboard Analytics          │
+│ View food statistics and        │
+│ inventory summaries instantly.  │
+└─────────────────────────────────┘
+
+Mission Section
+
+Developer Section
+
+Footer
+
+
+
+
+Food DashBoard Page
+
+Header
+
+Food Dashboard
+
+[ + Add Food Item ]
+
+----------------------------------------------------
+| Search Bar                    | Category Filter |
+----------------------------------------------------
+
+----------------------------------------------------
+| Food Table                                      |
+----------------------------------------------------
+| Name | Category | Qty | Expiry | Status | Action |
+----------------------------------------------------
+| Milk | Dairy    | 2   | 18-Jun | Fresh  | Edit   |
+| Bread| Bakery   | 5   | 17-Jun | Expiry | Delete |
+----------------------------------------------------
+
+Pagination
+
+Footer
+
+
+Contact Page
+
+Header
+
+Contact Us
+
+------------------------------------
+| Contact Form                     |
+------------------------------------
+| Name                             |
+| Email                            |
+| Message                          |
+|                                  |
+| [ Send Message ]                 |
+------------------------------------
+
+OR
+
+Email: support@foodboard.com
+Phone: +91 XXXXX XXXXX
+
+Footer
+
+
