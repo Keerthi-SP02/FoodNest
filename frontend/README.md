@@ -1,16 +1,75 @@
-# React + Vite
+# FoodNest – Food Items Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+FoodNest is a web-based Food Items Management Application developed using the MERN Stack. It enables users to efficiently manage food inventory by adding, viewing, updating, searching, sorting, and deleting food items. The application also tracks food expiry dates and provides a secure and user-friendly platform for inventory management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- User Registration and Login
+- JWT Authentication
+- Add Food Items
+- View Food Inventory
+- Update Food Items
+- Delete Food Items
+- Search Food Items
+- Track Food Expiry Dates
+- Sort Food Items by Name and Expiry Status
+- Stock Status Monitoring
+- User Profile Management
+- Responsive User Interface
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technology Stack
+
+### Frontend
+- React.js
+- React Router
+- Axios
+- Bootstrap
+
+### Backend
+- Node.js
+- Express.js
+
+### Database
+- MongoDB
+
+### Authentication
+- JWT (JSON Web Token)
+- bcrypt.js
+
+### Development Tools
+- Visual Studio Code
+- Git
+- GitHub
+
+---
+
+## Project Structure
+
+```
+FoodNest/
+│
+├── frontend/
+│   ├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   └── App.jsx
+│
+├── backend/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── server.js
+│   └── .env
+│
+└── README.md
+```
+
+---
+
